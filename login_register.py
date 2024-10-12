@@ -37,26 +37,6 @@
 #         print("Incorrect password. Please try again. \n")
 
 
-# def main():
-#     while True:
-#         print("Welcome to the Login and Registration System")
-#         print("1. Register")
-#         print("2. Login")
-#         print("3. Exit")
-#         choice = int(input("Enter your choice (1/2/3)"))
-#         if choice == 1:
-#             register()
-#         elif choice == 2:
-#             login()
-#         elif choice == 3:
-#             print("Exiting the system. Goodbye!")
-#             break
-#         else:
-#             print("invalid choice. please try again. \n")
-
-# if __name__ == '__main__':
-#     main()
-
 
 users = []
 
@@ -90,18 +70,25 @@ def login():
     if userFound['password'] == password:
         print(f"Welcome back, {userName}")
 
-
 def main():
-    while True:    
-        print("Welcome to login and register: ")
+    while True:
+        print("Welcome to the Login and Registration System")
         print("1. Register")
         print("2. Login")
         print("3. Exit")
-        choice = input("Enter Your choice : ")
-        if choice == '1':
+        choice = int(input("Enter your choice (1/2/3)"))
+        if choice == 1:
             register()
-        elif choice == '2':
+        elif choice == 2:
             login()
-        elif choice == '3'
+        elif choice == 3:
+            print("Exiting the system. Goodbye!")
+            break
         else:
+            print("invalid choice. please try again. \n")
+
+if __name__ == '__main__':
+    main()
+
+
             
